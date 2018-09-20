@@ -1,0 +1,27 @@
+{
+	"name": "toy-robot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "webpack && node ./dist/dist.js",
+		"test": "jest --coverage",
+		"test-w": "jest --watchAll --coverage"
+	},
+	"author": "Carlo Cruz",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.1.0",
+		"babel-core": "^6.26.3",
+		"babel-jest": "^23.6.0",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"webpack": "^4.19.1",
+		"webpack-cli": "^3.1.0"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.js$": "babel-jest"
+		}
+	}
+}
